@@ -2,7 +2,16 @@
 y devuelve como resultado una cadena de texto que indica si el número es par o impar.
  Mostrar por pantalla el resultado devuelto por la función.*/
 function ejer10() {
-    let numero = prompt("ingrese un numero");
+    let numero = 0;
+    do {
+        if (isNaN(numero)) {
+
+            window.alert("debe ingresar un numero");
+
+        }
+        numero = prompt("ingrese un numero");
+    } while (isNaN(numero));
+
     esPar(numero);
 
 }
