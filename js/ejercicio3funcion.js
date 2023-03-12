@@ -4,9 +4,18 @@ luego crear una función para calcular su perímetro y mostrarlo por pantalla.
 La fórmula del perímetro  es p = 2*(a +b)
  */
 function ejer13() {
-    let frase;
-    let ladoA = parseInt(prompt("ingre lado largo del rectangulo"));
-    let ladoB = parseInt(prompt("ingre lado corto del rectangulo"));
+    let ladoA = 0;
+    let ladoB = 0;
+    do {
+        if (isNaN(ladoA) || isNaN(ladoB)) {
+
+            window.alert("alguno de los datos ingresados no es un numero, ingrese un numero");
+
+        }
+        ladoA = parseInt(prompt("ingre lado largo del rectangulo"));
+        ladoB = parseInt(prompt("ingre lado corto del rectangulo"));
+    } while (isNaN(ladoA) || isNaN(ladoB));
+
     calcularPerimetro(ladoA, ladoB);
 
 }

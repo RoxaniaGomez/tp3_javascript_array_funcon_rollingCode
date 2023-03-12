@@ -2,7 +2,16 @@
 muestre poniendo el signo – entre cada carácter sin usar
  el método replace. */
 function ejer14() {
-    let num = parseInt(prompt("un numero "));
+
+    let num = 0;
+    do {
+        if (isNaN(num)) {
+
+            window.alert("debe ingresar un numero");
+
+        }
+        num = parseInt(prompt("ingrese un numero"));
+    } while (isNaN(num));
     hacerTabla(num);
 
 }
