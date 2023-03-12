@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    padding-block-start: 95px;
+
+}
+
+
+
+@media screen and (max-width: 300px) {
+    div.caja {
+        width: 100px;
+        height: 400px;
+        overflow: auto;
+    }
+}
+
+@media all and (min-width:301px) and (max-width:499px) {
+    div.caja {
+        width: 200px;
+        height: 600px;
+        overflow: auto;
+    }
+
+}
+
+
+@media all and (min-width:768px) and (max-width:991px) {
+    div.caja {
+        width: 600px;
+        height: 800px;
+        overflow: auto;
+    }
+
+}
