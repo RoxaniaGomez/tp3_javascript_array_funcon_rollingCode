@@ -17,7 +17,15 @@ main {
 
 
 
+
+
 @media screen and (max-width: 300px) {
+    main {
+        flex-grow: 1;
+        padding-block-start: 115px;
+
+    }
+
     div.caja {
         width: 100px;
         height: 400px;
